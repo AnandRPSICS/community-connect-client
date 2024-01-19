@@ -64,17 +64,17 @@ const UserNavbar = () => {
           <p> COMMUNITY CONNECT</p>
         </div>
         <div className="user-navbar-center">
-          <Link to="/">Home</Link>
-          <Link to="">About</Link>
+          <Link >Home</Link>
+          <Link >About</Link>
           <button
             className="border-0 text-light bg-transparent"
-            onClick={handleRedirectOrpList}
+            
           >
             Orphanages
           </button>
           <button
             className="border-0 text-light bg-transparent"
-            onClick={handleRedirectRequest}
+           
           >
             Donate
           </button>
@@ -82,9 +82,9 @@ const UserNavbar = () => {
         <div className="user-navbar-right">
           {/* <img src="https://picsum.photos/200/300" alt="profile-icon" /> */}
           {userContext?.userType ? (
-            <button onClick={handleLogout}> Logout </button>
+            <button > Logout </button>
           ) : (
-            <button onClick={redirectUserLogin}>Login</button>
+            <button >Login</button>
           )}
         </div>
       </Container>
