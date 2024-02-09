@@ -21,8 +21,28 @@ function App() {
         <Route path="/" element={<UserHome />} />
         <Route path="/user/signup" element={<UserSignup />} />
         <Route path="/user/login" element={<UserLogin />} />
-     
-  
+
+        <Route
+          path="/user/orphanages-list"
+          element={<UserOrphanagesList activeUser="user" />}
+        />
+        <Route path="/user/orphanage/:id" element={<OrphanageDetails />} />
+        <Route
+          path="/user/orphanage/request"
+          element={<UserDonationRequest />}
+        />
+
+        {/* orphange  */}
+        {/* orphnaage routes  */}
+        <Route path="/orphanage" element={<OrphanageHome />} />
+        <Route
+          path="/orphanage/orphanages-list"
+          element={<UserOrphanagesList activeUser="orphanage" />}
+        />
+        <Route
+          path="/orphanage/donation-request"
+          element={<CreateDonationRequest />}
+        />
 
         {/* Admin Routes  */}
         <Route path="/admin/login" element={<AdminLogin />} />
